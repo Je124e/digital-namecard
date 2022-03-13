@@ -1,76 +1,133 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
- 
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<style>
-	@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
- body {
-	 background: url('https://blogs.microsoft.com/wp-content/uploads/prod/2020/10/HERO-ART-microsoft_azure_1920x1000_nologo.jpg') no-repeat center center fixed;
-	 background-size: cover;
-	 font-family: 'Open Sans', sans-serif;
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+	<style>
+	/* Watch this video https://youtu.be/_-IgBj04fog */
+*{
+  margin: 0;
+  padding: 0;
+font-family:sans-serif;
 }
- .card {
-	 width: 320px;
-	 height: 500px;
-	 background-color: rgba(255, 255, 255, .6);
-	 border-radius: 10px;
-	 margin: 20px auto;
-	 box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1), 2px 2px 8px rgba(0, 0, 0, 0.1);
+
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: rgb(12, 9, 46, 0.4);
+  justify-content: center;
 }
- .card .card-header {
-	 height: 220px;
-	 border-top-left-radius: 10px;
-	 border-top-right-radius: 10px;
-	 background: url(https://c4.wallpaperflare.com/wallpaper/681/554/339/abstract-planet-space-purple-wallpaper-preview.jpg);
-	 background-size: cover;
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+background-color: rgba(18, 19, 68, 0.9);
+border-radius: 10px 80px 20px;
 }
- .card .card-body {
-	 position: relative;
+
+.img-container{
+  margin-bottom: -50px;
+  border-radius: 20px;
+  overflow: hidden;
 }
- .card .card-body img {
-	 height: 100px;
-	 width: 100px;
-	 border-radius: 10px;
-	 border: 3px solid rgba(255, 255, 255, .6);
-	 position: absolute;
-	 top: -50px;
-	 left: 50%;
-	 margin-left: -50px;
-	 box-shadow: 0 6px 6px -4px rgba(0, 0, 0, .2);
+
+.skewed{
+  width: 250px;
+  height: 320px;
+  margin: 50px 0 -50px 0;
+  border-radius: 30px;
+  transform: skewY(15deg);
+  overflow: hidden;
 }
- .card .card-body .name {
-	 font-size: 32px;
-	 text-align: center;
-	 padding-top: 60px;
-	 margin-bottom: 10px;
+
+#img{
+  width: 100%;
+  height: 100%;
+  margin-top: -30px;
+  transform: skewY(-15deg);
+  background-image: url("https://www.enjpg.com/img/2020/space-1.jpg");
+  background-size: 100%;
+  background-position: center;
+  transition: all 0.3s ease;
 }
- .card .card-body .description {
-	 padding: 0 25px;
-	 line-height: 1.5;
-	 text-align: center;
-	 margin-bottom: 25px;
+
+#img:hover{
+  background-size: 110%;
 }
- .card .card-body .location {
-	 font-size: 12px;
-	 letter-spacing: 2px;
-	 text-transform: uppercase;
-	 text-align: center;
+
+.content{
+  width: 300px;
+  height: 130px;
+  padding-top: 50px;
+  border-radius: 5px;
+  box-shadow:rgba(13, 13, 241, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
- 
-	</style>
+
+.content h2{
+  font-size: 25px;
+  color: rgb(108, 123, 255);
+  text-shadow:  0px 0px 100px rgba(0, 47, 255, 0.06);
+}
+
+.content h2:hover{
+  text-shadow:  0px 0px 100px rgb(255, 94, 0);
+}
+
+.content p{
+  font-size: 16px;
+  margin-top: 1px;
+  color: #ffffff;
+}
+
+.content .links{
+  width: 80%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.content .links i{
+  color: #058eff;
+  font-size: 30px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.content .links i:hover{
+  transform: scale(1.2);
+}</style>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
+<body>
+  <!-- Watch this video https://youtu.be/_-IgBj04fog  -->
+  
 
-<body<div class="card">
-  <div class="card-header"></div>
-  <div class="card-body">
-    <img src="https://4.bp.blogspot.com/-W0_HZx9NWfI/XD45qcBbaII/AAAAAAAAAn4/paWYCWR06l092c0vcBV2G9HAChXB3nhRwCKgBGAs/w0/astronaut-space-13-4k.jpg">
-    <div class="name">Chris Wiggins</div>
-    <div class="description">Front-end developer, ice hockey goalie, not a father</div>
-    <div class="location">Washington DC</div>
+  <div class="card">
+      <div class="img-container">
+          <div class="skewed">
+              <div id="img"></div>
+          </div>
+      </div>
+      <div class="content">
+          <h2>JamaL</h2>
+          <p>Human On Earth</p>
+          <div class="links">
+              <a href="https://github.com/je124e" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/je124e" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://t.me/je124e" target="_blank"><i class="fab fa-telegram"></i></a>
+          </div>
+      </div>
   </div>
-</div>
-</body>
 
+  
+</body>
 </html>
